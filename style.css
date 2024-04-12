@@ -93,3 +93,12 @@
     background-color: blue;
     transition: 1s;
 }
+
+.atag{
+    color: black;
+}
+
+.atag:hover{
+    text-decoration: none;
+    color:black
+}
