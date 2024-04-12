@@ -20,11 +20,13 @@
 
 .card{
   height:200px;
-  width:300px;
+  width:250px;
   border:2px solid black;
   transition:.3s;
   margin: 1rem;
 }
+
+/* End */
 
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -32,8 +34,6 @@
     margin-left: 100px;
     padding-right: 80px;
   }
-
-/* End */
 
 .typeahead { 
     width: 140%; 
@@ -55,6 +55,7 @@
 .copyrightLine{
     padding: 10px 0px;
     background-color: rgb(230, 227, 224);
+    margin: 0px;
 }
 
 /* Styling community subpage */
@@ -68,4 +69,25 @@
 /* End */
 .skillsPage{
     background-color: rgb(239, 239, 230);
+}
+.emailBox{
+    width: 350px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.emailBox:hover{
+    border: 2px solid blue;
+    transition: 0.5s;
+}
+.subscribeBox{
+    height: 45px;
+    color: blue;
+    border:2px solid blue;
+    border-radius: 5px;
+}
+.subscribeBox:hover {
+    color: white;
+    background-color: blue;
+    transition: 1s;
 }
