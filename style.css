@@ -5,3 +5,67 @@
     left: 30%;
     color: white;
 }
+
+/* Card hovering code */
+/* Start */
+
+.card .read-more:hover{
+    font-size: 14px;
+}
+
+.card:hover{
+    box-shadow: 8px 8px 8px rgb(205, 205, 224);
+    transform:scale(1.04);
+}
+
+.card{
+  height:200px;
+  width:300px;
+  border:2px solid black;
+  transition:.3s;
+  margin: 1rem;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+    margin-left: 100px;
+    padding-right: 80px;
+  }
+
+/* End */
+
+.typeahead { 
+    width: 140%; 
+    border: 2px solid white;
+    /* border: none; */
+    padding: 10px 10px;
+    border-radius: 20px;
+    top: 60px !important; 
+    left: 50px !important; 
+    background-color: rgb(210, 213, 216);
+}
+.typeahead:hover{
+    border: 2px solid blue;
+    transition: 0.5s;
+}
+.logo{
+    width: 20px;
+}
+.copyrightLine{
+    padding: 10px 0px;
+    background-color: rgb(230, 227, 224);
+}
+
+/* Styling community subpage */
+/* Start */
+
+.RoadmapGuiderCommunity  img{
+    width: 250px;
+    position: relative;
+    left: 30px;
+}
+/* End */
+.skillsPage{
+    background-color: rgb(239, 239, 230);
+}
