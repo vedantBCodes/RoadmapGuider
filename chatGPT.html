@@ -1,60 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChatGPT</title>
 
-     <!-- Linking CSS file -->
-     <link rel="stylesheet" href="style.css" />
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="style.css" />
 
-     <!-- Linking bootstrap CSS file -->
-     <link
-       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-       rel="stylesheet"
-       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-       crossorigin="anonymous"
-     />
- 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
- 
-     <link
-       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-       rel="stylesheet"
-     />
+    <!-- Linking bootstrap CSS file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-     <style>
-       #firstSubPage{
-        width:100vw;
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      #firstSubPage {
+        width: 100vw;
         height: 70vh;
-          background-image: url(Images/chatgptBgImage2.webp);
-          background-repeat: no-repeat;
-          background-size: cover;
-       }
-       #image{
+        background-image: url(Images/chatgptBgImage2.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #image {
         width: 30vw;
         border-radius: 10px;
-       }
-     </style>
-</head>
-<body>
-    <div id="firstSubPage">
-       <a href="index.html"> <img src="Images/RgLogo.png" alt="" width="100px" class="ms-3 mt-4"></a>
-   </div>
-   <div class="container-fluid my-3 justify-content-center">
-    <div class="row">
-        <div class="col-3">
+      }
+      .tableOfContent {
+        background-color: rgb(226, 229, 229);
+        border-radius: 10px;
+      }
+      p {
+        font-size: 20px;
+      }
+      a{
+        text-decoration: none;
+      }
+      a:hover{
+        color: black;
+        text-decoration: underline;
 
+      }
+      .step{
+        border: 2px solid black;
+        border-radius: 10px;
+        margin-bottom: 50px;
+      }
+      .stepInfo{
+        background-color: azure;
+        text-align: left;
+      }
+      .tip{
+        background-color: rgb(230, 222, 213);
+        border-radius: 5px;
+      }
+      .stepNumber{
+        float: left;
+        padding-left: 10px;
+        background-color: rgb(250, 245, 237);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="firstSubPage">
+      <a href="index.html">
+        <img src="Images/RgLogo.png" alt="" width="100px" class="ms-3 mt-4"
+      /></a>
+    </div>
+    <hr />
+    <div class="container-fluid my-3 justify-content-center">
+      <div class="row">
+        <div class="col-3 m-5 pe-0">
+          <div class="row tableOfContent pt-4 ps-4">
+            <p class="h3">Table of contents</p>
+            <div class="col-10 mt-3">
+              <a href="#Q1">What is ChatGPT ?</a>
+            </div>
+            <div class="col-10 mt-3">
+              <a href="#Q2">Who made ChatGPT ?</a>
+            </div>
+            <div class="col-10 mt-3">
+              <a href="#Q3">Who owns ChatGPT currently ?</a>
+            </div>
+            <div class="col-10 mt-3">
+              <a href="#Q4">What is ChatGPT used for ?</a>
+            </div>
+            <div class="col-10 mt-3">
+              <a href="#Q5">Is ChatGPT available for free ?</a>
+            </div>
+            <div class="col-10 mt-3">
+              <a href="#Q6">How can you access ChatGPT ?</a>
+            </div>
+            <div class="col-10 mt-3">
+              <a href="#Q7">How to use ChatGPT ?</a>
+            </div>
+            <hr />
+          </div>
         </div>
         <div class="col-7">
-           <p class="display-5">What is ChatGPT and how to use it ?</p>
-           <center><img src="Images/chatGPTBgImage3.webp" alt="" id="image"></center>
+          <p class="display-6 text-center">
+            What is ChatGPT and how to use it ?
+          </p>
+          <center>
+            <img src="Images/chatGPTBgImage3.webp" alt="" id="image" />
+          </center>
+          <div class="Q1 mt-5">
+            <a name="Q1">
+            <h2>What is ChatGPT ?</h2>
+            <br />
+            <p>
+              ChatGPT is a natural language processing chatbot driven by
+              generative AI that allows you to have human-like conversations to
+              complete various tasks. For example, the AI tool can answer
+              questions and assist you with tasks such as composing emails,
+              essays, and code.
+            </p>
+            <p>
+              It's currently
+              <a href="https://openai.com/blog/chatgpt"
+                >open to use by the public for free.</a
+              >
+              A paid subscription version called ChatGPT Plus launched at the
+              beginning of February 2023 which gives users access to premium
+              features, such as OpenAI's latest models.
+            </p>
+          </a>
+          </div>
+          <div class="Q2 mt-5">
+            <a name="Q2">
+            <h2>Who made ChatGPT ?</h2>
+            <br />
+            <p>
+              ChatGPT was created by OpenAI, an AI research company. The company
+              launched ChatGPT on November 30, 2022. OpenAI is also responsible
+              for DALL-E 2 and DALL-E 3, popular AI image generators, and
+              Whisper, an automatic speech recognition system.
+            </p>
+          </a>
+          </div>
+          <div class="Q3 mt-5">
+            <a name="Q3"></a>
+            <h2>Who owns ChatGPT currently ?</h2>
+            <br />
+            <p>
+              OpenAI owns ChatGPT. Microsoft is a major investor in OpenAI with
+              a multi-year, multi-billion dollar investment. Elon Musk was an
+              investor when OpenAI was first founded in 2015. However, he has
+              since completely severed ties with the company and created his own
+              AI chatbot, Grok.
+            </p>
+          </a>
+          </div>
+          <div class="Q4 mt-5">
+            <a name="Q4">
+            <h2>What is ChatGPT used for ?</h2>
+            <br />
+            <p>
+              ChatGPT has many functions in addition to answering simple
+              questions. ChatGPT can compose essays, have philosophical
+              conversations, do math, and even code for you. <br />
+              <br />
+
+              The tasks ChatGPT can help with also don't have to be so
+              ambitious. For example, my favorite use of ChatGPT is for help
+              creating basic lists for chores, such as packing and grocery
+              shopping, and to-do lists that make my daily life more productive.
+              The possibilities are endless. <br />
+              <br />
+
+              ZDNET has published many ChatGPT how-to guides. Here are some of
+              the most popular.
+            </p>
+          </a>
+          </div>
+          <div class="Q5 mt-5">
+            <a name="Q5">
+            <h2>Is ChatGPT available for free ? </h2>
+            <br />
+            <p>
+              ChatGPT is free to use, regardless of
+              what you use it for, including writing, coding, and much more. There
+              is a <a href="https://www.zdnet.com/article/chatgpt-vs-chatgpt-plus-is-it-worth-the-subscription-fee/">subscription option</a>, ChatGPT Plus, that users can take advantage
+              of that costs $20/month.  <br> <br>
+              The paid subscription model guarantees users
+              extra perks, such as general access even at capacity, access to GPT-4,
+              faster response times, and internet browsing.
+            </p>
+          </a>
+          </div>
+          <div class="Q6 mt-5">
+            <a name="Q6">
+            <h2>How can you access ChatGPT ?</h2>
+            <br />
+            <p>
+              On April 1, OpenAI stopped requiring users to log in to use
+              ChatGPT. Now, you can access ChatGPT simply by visiting
+              <a href="https://chat.openai.com/"> chat.openai.com.</a> You can
+              also access ChatGPT via an app on your iPhone or Android device.
+              <br />
+              <br />
+
+              Once you visit the site, you can start chatting away with ChatGPT.
+              A great way to get started is by asking a question, similar to
+              what you would do with Google. You can ask as many questions as
+              you'd like. <br />
+              <br />
+
+              There are still some perks to creating an OpenAI account, such as
+              the ability to save and review chat history and access custom
+              instructions. Creating an OpenAI account is entirely free and
+              easy, with logging in with your Google account being an option.
+              <br />
+            </p>
+          </a>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <hr style="border: 2px solid rgb(0, 0, 0);" class="mx-5">
+    <a name="Q7">
+      <div class="row">
+    <center><div id="secondSubPage" class="text-center col-8 justify-content-center">
+       <h2>How to use ChatGPT – setting up your account</h2>
+       <p>If you want to find out how to use ChatGPT the instructions and tips below will get you started with the AI chatbot.</p>
+
+       <div class="step1 step">
+       <p class="stepInfo h3 pb-3"> <span class="stepNumber p-2"> Step <br> &nbsp;&nbsp;1 </span> <span class="pt-2 pb-4"> <br>&nbsp;&nbsp;&nbsp;  Sign up to OpenAI </span></p>
+<p class="px-3">
+  To be able to use ChatGPT, OpenAI requires you to make an account. To start things off, head to <a href="https://chat.openai.com/">OpenAI's ChatGPT website.</a> <br> <br>
+  <img src="Images/ChatGPT_Page Images/step1Image.png" alt="" width="500vw"> <br>
+  <p class="tip py-2 mx-5">EXTRA TIP -You can also sign in with a Google or Microsoft account.</p>
+</p>
+       </div>
+
+       <div class="step2 step">
+        <p class="stepInfo h3 pb-3"> <span class="stepNumber p-2"> Step <br> &nbsp;&nbsp;2 </span> <span class="pt-2 pb-4"> <br>&nbsp;&nbsp;&nbsp;  Create an account </span></p>
+ <p class="px-3">
+  Once you are on the ChatGPT site, you will have the option to “Sign up” and create an OpenAI account. <br> <br>
+
+  After that, simply click “Sign up” and choose your preferred login method. <br> 
+   <img src="Images/ChatGPT_Page Images/step2Image.png" alt="" width="500vw"> <br>
+   <p class="tip py-2 mx-5">EXTRA TIP -If you see an ‘at capacity’ error, your best option is to either wait or refresh your page. If these two methods do not work, read our article here where we show you how to resolve this.</p>
+ </p>
         </div>
 
-    </div>
+        <div class="step3 step">
+          <p class="stepInfo h3 pb-3"> <span class="stepNumber p-2"> Step <br> &nbsp;&nbsp;3 </span> <span class="pt-2 pb-4"> <br>&nbsp;&nbsp;&nbsp;  Confirm your account </span></p>
+   <p class="px-3">
+    The next step is to confirm your account. If you have chosen to sign up via email, OpenAI will send a verification email to your inbox. Follow the link to complete this step. <br> <br>
 
-   </div>
-</body>
+    OpenAI will ask you for your first and last name, followed by your phone number to further verify your account. <br> 
+    
+    After that, fill in these details and follow the next verification steps. <br> 
+    
+    For more detailed info on <a href="https://www.pcguide.com/apps/how-to-log-in-to-chatgpt/">logging in to ChatGPT </a>check out our dedicated article <br> <br>
+    <br>
+     <p class="tip py-2 mx-5">EXTRA TIP -If you’re under 18, you'll need your parent or guardian’s permission to create an account.</p>
+   </p>
+          </div>
+
+          <div class="step4 step">
+            <p class="stepInfo h3 pb-3"> <span class="stepNumber p-2"> Step <br> &nbsp;&nbsp;4 </span> <span class="pt-2 pb-4"> <br>&nbsp;&nbsp;&nbsp;  Ask ChatGPT a question </span></p>
+     <p class="px-3">
+      Once you have signed in, you will be presented with a screen that looks like the image below. To use ChatGPT all you have to do is type anything into the search bar. As a result, the chatbot will respond to your prompt. The possibilities feel almost endless, but asking the AI ‘Can you…’ will allow you to see if the application can help you with your query. <br> 
+       <img src="Images/ChatGPT_Page Images/step4Image.png" alt="" width="500vw"> <br>
+       <p class="tip py-2 mx-5">EXTRA TIP -Note, that the more details and information you give the AI bot, the more specific the response will be. For example, if you wanted to write lyrics to a song in the style of a particular artist, you can tell ChatGPT that. What if you want the lyrics to rhyme? Natural language processing (NLP) can do that too, as long as you prompt it beforehand.</p>
+     </p>
+            </div>
+    </div>
+  </div>
+</center>
+  </a>
+  </body>
 </html>
