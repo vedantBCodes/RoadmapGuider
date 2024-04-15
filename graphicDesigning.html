@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphic Designing</title>
+
+    <!-- Linking bootstrap CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        #firstSubPage {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(Images/graphicDesigningBgImage.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #Questions {
+            padding: 20px;
+            color: black;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 8px 8px 8px rgb(205, 205, 224);
+            border-radius: 10px;
+        }
+
+        #Questions a {
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        #Questions a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        #firstPara {
+            width: 40vw;
+            margin-left: 70px;
+            padding-top: 100px;
+            font-size: 20px;
+        }
+
+        .secondSubPageBg {
+            /* background-color: rgb(247, 247, 247); */
+            background-image: url(Images/Graphic_Designing_Images/secondSubpageBgImage.avif);
+            background-size: cover;
+            height: 70vh;
+            margin-top: 0px;
+            color: white;
+        }
+
+        form {
+            margin-top: 40px;
+            background-color: white;
+            color: black;
+            padding: 40px;
+            width: 25vw;
+            border-radius: 10px;
+        }
+
+        center input {
+            border: none;
+            border-bottom: 2px solid black;
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        center input:hover {
+            box-shadow: 8px 8px 8px rgb(205, 205, 224);
+            transition: 0.5s;
+            border: 0px;
+            border-bottom: 3px solid black;
+
+        }
+
+        input[type=submit] {
+            width: 150px;
+            height: 40px;
+            color: rgb(192, 192, 197);
+            background-color: white;
+            border: none;
+            border-bottom: 2px solid black
+        }
+
+        input[type=submit]:hover {
+            color: white;
+            background-color: rgb(156, 156, 192);
+        }
+
+        .questionHead {
+            font-size: 40px;
+        }
+
+        .questionPara {
+            font-size: 20px;
+        }
+
+        .answer {
+            padding: 50px;
+            padding-bottom: 0px;
+            padding-top:20px;
+        }
+        .tips{
+            width: 45vw;
+            font-size: 20px;
+            padding: 50px;
+            background-color: rgb(249, 246, 246);
+            box-shadow: 8px 8px 8px 8px rgb(205, 205, 224);
+            border-radius: 10px;
+        }
+        .tips li{
+            padding: 10px 0px;
+        }
+        .tipsHeading{
+            font-size: 30px;
+            padding: 10px;
+            background-color: rgb(219, 225, 230);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- First Subpage -->
+
+    <div id="firstSubPage">
+        <a href="index.html">
+            <img src="Images/RgLogo.png" alt="" width="100px" class="ms-3 mt-4" /></a>
+    </div>
+
+    <!-- Second Subpage -->
+
+    <div class="container-fluid secondSubPageBg">
+        <div class="row">
+            <div class="col-7">
+                <div id="firstPara">
+                    <p class="display-6">How to Become a Graphic Designer</p>
+                    <br />
+                    <p class="font-weight-">
+                        RG's Graphic Designer career guide is intended to help you
+                        take the first steps toward a career in graphic design. <br> <br>The
+                        guide provides an in-depth overview of the graphic design
+                        skills you should learn, the best training options, career
+                        paths in graphic design, how to become a Graphic Designer, and
+                        more.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <form action="">
+                    <p style="font-size: 25px; ">Become a Graphic Designer </p>
+                    <p>Speak to a Learning Advisor to learn
+                        more about how our bootcamps and courses can help you become a
+                        Graphic Designer.</p>
+                    <center>
+                        <input type="text" placeholder="Enter your Name :"> <br> <br>
+                        <input type="email" placeholder="Enter your email : "> <br> <br>
+                        <input type="submit">
+                    </center>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-3">
+            <div id="Questions">
+                <p class="h2">Graphic Designing</p>
+                <br />
+                <a href="#Q1">What is graphic Designing ?</a> <br />
+                <br />
+                <a href="#Q2">What Does a Graphic Designer Do ?</a> <br />
+                <br />
+                <a href="#Q3">What Skills Do Graphic Designers Need?</a> <br />
+                <br />
+                <a href="#Q4">What Tools Do Graphic Designers Use ?</a> <br />
+                <br />
+                <a href="#Q5">Is Graphic Design a Good Career?</a> <br />
+                <br />
+                <hr style="border:2px solid black;">
+                <a href="#Tips">Some Tips For Beginners</a>
+            </div>
+        </div>
+        <div class="col-9">
+            <a name="Q1">
+            <div class="answer">
+                <p class="questionHead">What is graphic Designing ?</p><br>
+                <p class="questionPara">
+                    Graphic design is the craft of planning and creating visual content to communicate ideas and
+                    messages. Graphic design is everywhere you look in the digital age — from billboards to cereal boxes
+                    to mobile apps. Through incorporating different elements and principles, these designs can influence
+                    our perception and emotions. <br> <br>
+
+                    Graphic design is also known as communication design, and Graphic Designers are essentially visual
+                    communicators. They bring visual concepts to life, most commonly through graphic design software,
+                    and inform or engage consumers through text, graphics and images. <br> <br>
+
+                    Graphic design is one way that companies connect with consumers. Design can be used to promote and
+                    sell products, to convey a message, or to develop a brand identity. Though some graphic design has a
+                    commercial purpose, Graphic Designers combine art and business, so the creative process is informed
+                    in part by business goals.
+                </p>
+            </div>
+        </a>
+
+
+        <a name="Q2">
+            <div class="answer">
+                <p class="questionHead"> What Does a Graphic Designer Do ?</p><br>
+                <p class="questionPara">
+                    Graphic Designers create visual concepts to communicate information. They create everything from
+                    posters and
+                    billboards to packaging, logos and marketing materials. Graphic Designers use elements such as
+                    shapes,
+                    colors, typography, images and more to convey ideas to an audience. Graphic Designers can work
+                    in-house,
+                    creating designs specifically for one brand, or at an agency or as a freelancer, where they work
+                    with a
+                    variety of clients. <br> <br>
+
+                    The role of Graphic Designers varies depending on where they work. Some tasks that designers may
+                    work on
+                    include selecting photos and typefaces, developing layouts, and designing logos. Graphic Designers
+                    may
+                    specialize in a particular area, such as motion graphics or print media. <br> <br>
+
+                    Graphic Designers often need to communicate with clients and consumers to develop designs that
+                    portray an
+                    intended message. They also collaborate with other graphic designers, marketers, business analysts,
+                    writers,
+                    and programmers to create successful products, campaigns, or websites.
+                </p>
+            </div>
+            </a>
+
+            <a name="Q3">
+            <div class="answer">
+                <p class="questionHead"> What Skills Do Graphic Designers Need ?</p><br>
+                <p class="questionPara">
+                    <b>Creativity</b> <br>
+                    Graphic Designers are constantly tasked with developing new and unique ideas. The designs they
+                    create need to capture people’s attention while also communicating an intended message, which
+                    requires a lot of creative thinking. <br> <br>
+
+                    <b>Communication</b> <br>
+                    Graphic design is visual communication, so communication skills are at the heart of a Graphic
+                    Designer’s work. Not only do they need to communicate ideas through their designs, but Graphic
+                    Designers also need to communicate with colleagues and clients. At times, designers may need to
+                    explain a design decision or rationale to people without a design background. In addition, they will
+                    need both written and verbal communication skills for proposals and presentations. <br> <br>
+
+                    <b>Strategy</b> <br>
+                    Graphic Designers are strategic thinkers – they have to consider how certain design elements work
+                    together and how to best convey meaning while adhering to design standards. This involves conducting
+                    market research, brainstorming, thumbnailing, developing ideas, and evaluating designs. <br> <br>
+
+                    <b>Problem solving</b> <br>
+                    Think of a design brief as a problem: a client needs something to be communicated, and the right
+                    design will solve their problem. Graphic Designers use problem solving skills throughout the design
+                    process. This may involve troubleshooting design issues or revising designs to meet client needs.
+                    <br> <br>
+
+                    <b>Time management</b> <br>
+                    Graphic Designers often work on multiple projects at once, and may be dealing with deadlines from
+                    several different clients. Graphic Designers need to be able to balance workloads and prioritize
+                    projects.
+                </p>
+            </div>
+            </a>
+
+            <a name="Q4">
+            <div class="answer">
+                <p class="questionHead">What Tools Do Graphic Designers Use ?</p><br>
+                <p class="questionPara">
+                    Graphic Designers most commonly use graphic design software. Adobe Creative Suite is the most
+                    popular option in the industry, but there are also other powerful design programs available, such as
+                    Sketch. In addition to software, Graphic Designers rely on other tools such as computers, tablets,
+                    and cameras.
+
+                    <br> <br>
+
+                    Graphic design software is used to create, edit, and view graphic art. There are many types of
+                    graphic design software available, each with different tools and functions. Depending on the
+                    software, users can create illustrations, develop multimedia, stylize or edit images, and format
+                    layouts. <br> <br>
+
+                    Graphic Designers rely on software to bring their ideas to life. Photoshop, Sketch, Illustrator,
+                    InDesign, and After Effects are among the best software for graphic design. <br> <br>
+
+                    <b>Photoshop</b> <br>
+                    Photoshop is a graphic editor that is best used for image editing. It is the industry standard for
+                    manipulating photos and computer art. Photoshop offers 2D and 3D image manipulation, compositing,
+                    video editing, and image analysis. <br> <br>
+
+                    <b>Sketch</b> <br>
+                    Sketch is a vector-based tool available on Mac and focuses on web, app, and interface design. This
+                    is a great program for designing icons, ad banners, social media images, and presentation materials.
+                    It also has many UI and UX-related usages, such as icon design, prototyping, and creating user
+                    flows. <br> <br>
+
+                    <b>Illustrator</b> <br>
+                    With Illustrator, you can create everything from vector illustrations and logos to graphics and
+                    fonts. While Illustrator shares many similar tools and functions with Photoshop, it is centered
+                    around vector design, which means that you can resize and rescale designs without losing image
+                    clarity. <br> <br>
+
+                    <b>InDesign</b> <br>
+                    InDesign is a page layout program and an essential tool for Designers working in publishing. This
+                    software can be used for laying out magazines and newspapers, or putting together reports and
+                    brochures. With InDesign, Designers can effectively organize text, create layout formats, insert
+                    image placeholders, and save files in a print-ready format. <br> <br>
+
+                    <b>After Effects</b> <br>
+                    After Effects is a motion graphics and visual effects software that is ideal for Graphic Designers
+                    who incorporate motion into their work. With After Effects, designers can create animations, movie
+                    titles, transitions, or even design in a 3D space. 
+                </p>
+            </div>
+            </a>
+
+            <a name="Q5">
+            <div class="answer">
+                <p class="questionHead"> Is Graphic Design a Good Career ?</p><br>
+                <p class="questionPara">
+                    Graphic design is a great career for people who are creative thinkers and enjoy art, technology, and
+                    communication. There are design needs across every industry, so Graphic Designers have many
+                    opportunities to take on a range of new and exciting projects. It can also be a very fulfilling
+                    career, as Graphic Designers can see the real-world impact of their work. <br> <br>
+
+                    Graphic design is an important marketing tool, so a Designer can add value to many workplaces.
+                    However, the demand for Graphic Designers does vary depending on the industry. The U.S. Bureau of
+                    Labor Statistics reports that employment opportunities for Graphic Designers in the publishing
+                    industry is declining. In computer systems design and related services, however, the need for
+                    Graphic Designers is expected to grow as more companies continue to increase their digital presence. <br> <br>
+
+                    There are also many opportunities for Graphic Designers to branch out into other design fields.
+                    Graphic Designers have many transferable skills, which can help them transition into related
+                    professions, such as UX/UI design or web development. <br>
+                </p>
+            </div>
+            <hr>
+        </a>
+            <a name="Tips">
+            <div class="tips">
+                <p class="tipsHeading">Graphic Design Tips for Beginners</p>
+                <ol>
+                    <li> Learn fundamental design principles.</li>
+                    <li>Enroll in a graphic design course.</li>
+                    <li>Master a design program of your choosing.</li>
+                    <li>Network with fellow designers.</li>
+                    <li>Practice, then practice some more.</li>
+                    <li>Follow design influencers and industry leaders.</li>
+                    <li>Build an inspiration catalog.</li>
+                    <li>Dissect the process.</li>
+                    <li>Get specific with your online search queries.</li>
+                    <li>Replicate your favorite work for learning purposes.</li>
+                    <li>Embrace negative space.</li>
+                    <li>Seek constructive feedback.</li>
+                    <li>Undertake a passion project.</li>
+                    <li>Just start.</li>
+                </ol>
+            </div>
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <!-- Linking js file -->
+
+        <script src="script.js"></script>
+
+        <!-- Linking bootstrap JS file -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
