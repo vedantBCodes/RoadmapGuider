@@ -68,6 +68,34 @@
         padding-left: 10px;
         background-color: rgb(250, 245, 237);
       }
+      #verticle_line {
+            margin-left: 0px;
+            margin-top: 0px;
+            width: 8px;
+            height: 360px;
+            background-color: silver;
+        }
+
+        #links {
+            width: 1600px;
+            padding-left: 20px;
+            padding-top: 0px;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+        #links a{
+          font-size: 20px;
+          color: rgb(83, 80, 80);
+            text-decoration: none;
+        }
+        #links a:hover{
+          color: black;
+            text-decoration: none;
+        }
+
     </style>
   </head>
   <body>
@@ -80,7 +108,22 @@
     <div class="container-fluid my-3 justify-content-center">
       <div class="row">
         <div class="col-3 m-5 pe-0">
-          <div class="row tableOfContent pt-4 ps-4">
+
+          <div class="flex-container">
+            <div id="verticle_line">
+    
+            </div>
+            <div id="links">
+                <a href="#Q1">What is ChatGPT ?</a> <br> <br>
+                <a href="#Q2">Who made ChatGPT ?</a> <br> <br>
+                <a href="#Q3">Who owns ChatGPT currently ?</a> <br> <br>
+                <a href="#Q4">What is ChatGPT used for ?</a> <br> <br>
+                <a href="#Q5">Is ChatGPT available for free ?</a> <br> <br>
+                <a href="#Q6">How can you access ChatGPT ?</a> <br> <br>
+                <a href="#Q7">How to use ChatGPT ?</a> <br> <br>
+            </div>
+            </div>
+          <!-- <div class="row tableOfContent pt-4 ps-4">
             <p class="h3">Table of contents</p>
             <div class="col-10 mt-3">
               <a href="#Q1">What is ChatGPT ?</a>
@@ -104,7 +147,7 @@
               <a href="#Q7">How to use ChatGPT ?</a>
             </div>
             <hr />
-          </div>
+          </div> -->
         </div>
         <div class="col-7">
           <p class="display-6 text-center">
