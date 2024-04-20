@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL</title>
+
+
+    <!-- Linking bootstrap CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        #firstSubPage {
+            width: 100vw;
+            height: 70vh;
+            background-image: url(Images/sqlBgImage2.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #verticle_line {
+            margin-left: 50px;
+            margin-top: 30px;
+            width: 2px;
+            height: 350px;
+            background-color: silver;
+        }
+
+        #links a {
+            margin-top: 60px;
+        }
+
+        #links {
+            width: 300px;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        a {
+            font-size: 20px;
+            color: rgb(83, 80, 80);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+
+        #information {
+            padding: 100px;
+            padding-top: 50px;
+            width: 1200px;
+        }
+
+        * {
+            font-size: 20px;
+        }
+
+        #verticle_line,
+        #links {
+            height: 400px;
+            box-shadow: 8px 8px 8px rgb(205, 205, 224);
+        }
+
+        span {
+            display: block;
+            margin-top: 20px;
+        }
+
+        #howToLearn,
+        #resources {
+            margin: 0px 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- First SubPage -->
+
+    <div id="firstSubPage">
+        <a href="index.html">
+            <img src="Images/RgLogo.png" alt="" width="100px" class="ms-3 mt-4" /></a>
+    </div>
+
+    <!-- Second SubPage -->
+
+    <div class="flex-container">
+        <div id="verticle_line">
+
+        </div>
+        <div id="links">
+            <span><a href="#Q1">Overview</a></span>
+            <span><a href="#Q2">Why is SQL important ?</a> </span>
+            <span><a href="#Q3">Why should you learn SQL ?</a></span>
+            <span><a href="#Q4">What Can SQL do ? </a> </span>
+            <span><a href="#Q5">What are SQL commands ?</a> </span>
+            <span><a href="#Q6">How to Learn SQL ? </a> </span>
+            <hr style="border: 1px solid black;">
+            <span><a href="#Q7">Best Free SQL courses</a></span>
+        </div>
+        <div id="information">
+            <a name="Q1">
+                <div>
+                    <h3> What is SQL ?</h3> 
+                    <p>
+
+                        SQL, short for Structured Query Language, is the standard language for communicating with
+                        relational
+                        databases.
+
+                        It's a relatively simple language as far as coding goes, but it's also incredibly powerful. <br>
+                        <br>
+                        <center><img src="Images/SQL_Images/secondSubpageBgImage.webp" alt="" class="img-fluid " style="border-radius: 10px;"></center> <br>
+
+                        You can write SQL statements to retrieve specific data from large databases, update data on a
+                        database,
+                        and much more. Relational database management systems like MySQL, Oracle, Microsoft SQL Server,
+                        Sybase,
+                        and Ingres use SQL. <br>
+                    </p>
+                </div>
+            </a>
+            <a name="Q2">
+                <div>
+                    <h3>Why is SQL important?</h3> <br>
+                    <p>
+                        
+                        Structured query language (SQL) is a popular query language that is frequently used in all types
+                        of applications. Data analysts and developers learn and use SQL because it integrates well with
+                        different programming languages. For example, they can embed SQL queries with the Java
+                        programming language to build high-performing data processing applications with major SQL
+                        database systems such as Oracle or MS SQL Server. SQL is also fairly easy to learn as it uses
+                        common English keywords in its statements
+                    </p>
+                </div>
+            </a>
+            <a name="Q3">
+                <div>
+                    <h3> Why should you learn SQL ?</h3> <br>
+                    <p>
+                        In our data-hungry world, the ability to successfully work with data is becoming more and more
+                        valuable. It's an in-demand skill and not just for data analysts. Financial teams, programmers,
+                        and
+                        even non-technical people in marketing, sales, and other functions can all benefit from
+                        understanding what it takes to extract the data they need from a large database. <br> <br>
+
+                        You don't necessarily need to become a SQL all-star, but understanding the basics will teach you
+                        how
+                        to ask better data-related questions (at the very least). <br>
+                    </p>
+                </div>
+            </a>
+            <a name="Q4">
+                <div>
+                    <h3>What Can SQL do ?</h3> <br>
+                    <p>
+
+                        &#149; execute queries against a database <br>
+                        &#149; retrieve data from a database <br>
+                        &#149; insert records in a database <br>
+                        &#149; update records in a database <br>
+                        &#149; delete records from a database <br>
+                        &#149; create new databases <br>
+                        &#149; create new tables in a database <br>
+                        &#149; can create stored procedures in a database <br>
+                        &#149; can create views in a database <br>
+                        &#149; can set permissions on tables, procedures, and views <br>
+                    </p>
+                </div>
+            </a>
+            <a name="Q5">
+                <div>
+                    <h3>What are SQL commands ?</h3>
+                    <p>
+
+                        Structured query language (SQL) commands are specific keywords or SQL statements that developers
+                        use
+                        to manipulate the data stored in a relational database. You can categorize SQL commands as
+                        follows.
+                        <br>
+
+                        <b>Data definition language</b>
+                        Data definition language (DDL) refers to SQL commands that design the database structure.
+                        Database
+                        engineers use DDL to create and modify database objects based on the business requirements. For
+                        example, the database engineer uses the CREATE command to create database objects such as
+                        tables,
+                        views, and indexes.<br> <br>
+
+                        <b>Data query language</b>
+                        Data query language (DQL) consists of instructions for retrieving data stored in relational
+                        databases. Software applications use the SELECT command to filter and return specific results
+                        from a
+                        SQL table.<br> <br>
+
+                        <b>Data manipulation language</b>
+                        Data manipulation language (DML) statements write new information or modify existing records in
+                        a
+                        relational database. For example, an application uses the INSERT command to store a new record
+                        in
+                        the database.<br> <br>
+
+                        <b>Data control language</b>
+                        Database administrators use data control language (DCL) to manage or authorize database access
+                        for
+                        other users. For example, they can use the GRANT command to permit certain applications to
+                        manipulate one or more tables.<br> <br>
+
+                        <b>Transaction control language</b>
+                        The relational engine uses transaction control language (TCL) to automatically make database
+                        changes. For example, the database uses the ROLLBACK command to undo an erroneous transaction.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <a name="Q6">
+        <div id="howToLearn">
+            <p class="display-6">How to Learn SQL (3 Methods)</p> <br>
+            <p>There are plenty of online resources that you can use to learn SQL. Let’s look at some effective ways to
+                master this language.</p>
+
+            <h3>1. Find a YouTube Tutorial</h3>
+            <p>
+
+                If you’re looking to learn SQL as fast as possible, YouTube is a great place to start. Rather than
+                completing a lengthy course, you can find a tutorial that simplifies the language into its core
+                concepts.
+                <br> <br>
+
+                For example, the <a href="https://www.youtube.com/watch?v=h0nxCDiD-zg">SQL for Beginners Tutorial
+                </a>will
+                teach you how to retrieve data from a database: <br>
+                <img src="Images/SQL_Images/howToLearnImage1.jpeg" alt="" class="img-fluid"> <br>
+
+                Learn SQL for beginners course on YouTube
+                In this 45-minute video, you’ll learn the basics of SQL, databases, and Relational Database Management
+                Systems. The creator will walk you through installing Microsoft SQL Server and SQL Server Management
+                Studio.
+                Using these free tools, you can familiarize yourself with tables, primary keys, data types, and more.
+            </p>
+
+            <h3>2. Take a Free Course</h3> <br>
+            <p>
+                Some people prefer structured courses. Fortunately, there are many e-learning materials that focus on
+                the
+                fundamentals. By completing untimed modules, you can become an SQL developer at your own pace. <br>
+
+                One of the best platforms to learn coding skills is Codecademy. After you create an account, you can
+                look
+                for beginner courses such as <a href="https://www.codecademy.com/learn/learn-sql">Learn SQL.</a> This
+                course
+                will teach you how to use SQL to communicate with
+                relational databases: <br>
+                <img src="Images/SQL_Images/howToLearnImage2.jpeg" alt="" class="img-fluid">
+                In each module, you’ll be able to enter commands, run queries, and use functions to perform database
+                operations:
+            </p>
+
+            <h3>3. Earn a Certification</h3> <br>
+            <p>
+                In most cases, you won't need a college degree to work with SQL. However, you might want to showcase
+                your
+                coding skills on your resume. When looking for a position that requires knowledge of SQL, having a
+                certification can increase your chances of getting hired. <br> <br>
+
+                Fortunately, you can easily gain a SQL certification online. Coursera’s <a
+                    href="https://www.coursera.org/learn/intro-sql">Introduction to Structured Query
+                    Language </a>teaches you how to create a MySQL database. Once you complete the course, you’ll
+                receive a
+                certificate: <br> <br>
+                <img src="Images/SQL_Images/howToLearnImage3.jpeg" alt="" class="img-fluid"> <br> <br>
+                Keep in mind that this is the second level in the Web Applications for Everybody Specialization. To get
+                up
+                to speed, you’ll have to first take the Building Web Applications in PHP course. If you’re already
+                familiar
+                with PHP, HTML, and CSS, feel free to sign up for the SQL lessons.
+            </p>
+        </div>
+    </a>
+
+    <a name="Q7">
+        <div id="resources">
+            <p class="display-6">Best Free SQL courses</p>
+            <p>
+                These days, it’s not just data engineers who need to know SQL.
+
+                As relational databases continue to proliferate across various fields, such as marketing and sales, a
+                new
+                cohort of professionals wants to learn SQL.
+
+                But there’s no need to shell out a bunch of money to learn these new skills. There are already plenty of
+                free SQL learning resources that can teach beginners everything they need to know about SQL. <br> <br>
+
+                Here are the best free online resources for learning SQL in 2024: <br></p>
+
+            <center>
+                <h3><a href="https://www.khanacademy.org/computing/computer-programming/sql">1. Khan Academy</a></h3>
+            </center>
+            <img src="Images/SQL_Images/resource1.webp" alt="" class="img-fluid"> <br> <br>
+
+            <p>
+                “Intro to SQL: Querying and managing data” by Khan Academy pairs video tutorials with interactive coding
+                challenges for a best-of-both worlds course. <br> <br>
+
+                Video lessons are shot at the command-line level, clearly demonstrating concepts in the code itself.
+                Frequent coding challenges reinforce the educational content with diverse problem sets.<br> <br>
+
+                This course is recommended for those who want to combine excellent visual lessons with interactive
+                coding
+                exercises .<br>
+
+            </p>
+
+            <center>
+                <h3><a href="https://sqlzoo.net/wiki/SQL_Tutorial">2. SQLZoo</a></h3>
+            </center>
+            <img src="Images/SQL_Images/resource2.webp" alt="" class="img-fluid"> <br> <br>
+
+            <p>
+                SQLZoo is an interactive, Wiki-based tutorial that offers lessons and projects for beginners in SQL.
+                Students start with basic functions such as COUNT, SUM, and AVG, and end by building intermediate
+                projects.
+                <br> <br>
+
+                The lessons center around interactive coding challenges that are meant to be self-explanatory. This is a
+                good resource for students who want to learn SQL through small, simple exercises.<br>
+
+            </p>
+
+            <center>
+                <h3><a href="https://www.codecademy.com/learn/learn-sql">3. Codecademy</a></h3>
+            </center>
+            <img src="Images/SQL_Images/resource2.webp" alt="" class="img-fluid"> <br> <br>
+
+            <p>
+                Codecademy, a leading educational coding platform, offers a free course on SQL. The course is structured
+                as
+                a series of interactive coding tutorials that guide students from basic functionality to varied,
+                long-form
+                projects. <br> <br>
+
+                Codecademy’s deep reservoir of exercises, and the service’s sleek interface, make for a smooth learning
+                experience. Recommended for students who want more of a professional feel to the learning process.<br>
+
+            </p>
+        </div>
+    </a>
+
+
+
+    <!-- Linking js file -->
+
+    <script src="script.js"></script>
+
+    <!-- Linking bootstrap JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
