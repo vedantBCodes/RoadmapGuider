@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming</title>
+
+
+    <!-- Linking bootstrap CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        #firstSubPage {
+            width: 100vw;
+            height: 85vh;
+            background-image: url(Images/programmingBgImge.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #verticle_line {
+            margin-left: 50px;
+            margin-top: 30px;
+            width: 2px;
+            height: 650px;
+            background-color: silver;
+        }
+
+        #links a {
+            margin-top: 60px;
+        }
+
+        #links {
+            width: 390px;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        #links a {
+            font-size: 20px;
+            color: rgb(83, 80, 80);
+            text-decoration: none;
+        }
+
+        #links a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+
+        #information {
+            padding: 30px;
+            padding-top: 20px;
+            width: 1200px;
+            margin: 70px;
+            margin-top: 0px;
+            /* border: 2px solid black; */
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px 4px rgb(231, 227, 227);
+        }
+
+        center img {
+            width: 600px;
+            border-radius: 10px;
+        }
+
+        * {
+            font-size: 20px;
+        }
+
+        #verticle_line,
+        #links {
+            height: 500px;
+            box-shadow: 8px 8px 8px rgb(205, 205, 224);
+        }
+
+        span {
+            display: block;
+            margin-top: 20px;
+        }
+
+        #FrequentlyAskedQuestion,
+        #Books {
+            margin: 50px 200px;
+        }
+
+
+        hr {
+            border: 1px solid black;
+        }
+
+        #Books {
+            font-size: 20px;
+        }
+
+        .bookInfo {
+            background-color: rgb(236, 238, 240);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+        }
+
+        .bookImage {
+            background-color: rgb(231, 231, 231);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        input[type="button"] {
+            padding: 10px 10px;
+            color: white;
+            border-radius: 10px;
+            background-color: blue;
+        }
+
+        input[type="button"]:hover {
+            box-shadow: 2px 2px 2px 2px rgb(65, 65, 214);
+            transition: 0.7s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- First SubPage -->
+
+    <div id="firstSubPage">
+        <a href="index.html">
+            <img src="Images/RgLogo.png" alt="" width="100px" class="ms-3 mt-4" /></a>
+    </div>
+
+    <!-- Second SubPage -->
+
+    <div class="flex-container">
+        <div id="verticle_line">
+
+        </div>
+        <div id="links">
+            <span><a href="#Q1">Overview</a></span>
+            <span><a href="#Q2">How does computer programming work ?</a></span>
+            <span><a href="#Q3">Difference Between Coding & Programming ?</a> </span>
+            <span><a href="#Q4">What Are the Benefits of Programming ?</a> </span>
+            <span><a href="#Q5">What Are Programming Languages ? </a> </span>
+            <span><a href="#Q6"> How to Learn Programming</a> </span>
+            <hr style="border: 1px solid black;">
+            <span><a href="#Q7">The Best Programming Books You Need To Read</a></span>
+            <span><a href="#Q8">Frequently asked questions (FAQ)</a></span>
+        </div>
+        <div id="information">
+
+            <a name="Q1">
+            <div>
+                <h3>What is programming ?</h3><br>
+
+                Programming refers to a technological process for telling a computer which tasks to perform in order to
+                solve problems. You can think of programming as a collaboration between humans and computers, in which
+                humans create instructions for a computer to follow (code) in a language computers can understand. <br>
+                <br>
+                <center><img src="Images/Programming_Images/secondSubpageBgImage2.jpeg" class="img-fluid"></center> <br>
+
+                Programming enables so many things in our lives. Here are some examples: <br> <br>
+
+                &#149; When you browse a website to find information, contact a service provider, or make a purchase,
+                programming allows you to interact with the site’s on-page elements, such as sign-up or purchase
+                buttons, contact forms, and drop-down menus.<br> <br>
+
+                &#149; The programming behind a mobile app can make it possible for you to order food, book a rideshare
+                service, track your fitness, access media, and more with ease.<br> <br>
+
+                &#149; Programming helps businesses operate more efficiently through different software for file storage
+                and
+                automation and video conferencing tools to connect people globally, among other things.<br> <br>
+            </div>
+        </a>
+
+            <a name="Q2">
+            <div>
+                <h3>How does computer programming work ?</h3><br>
+
+                At its most basic, programming tells a computer what to do. First, a programmer writes code—a set of
+                letters, numbers, and other characters. Next, a compiler converts each line of code into a language a
+                computer can understand. Then, the computer scans the code and executes it, thereby performing a task or
+                series of tasks. Tasks might include displaying an image on a webpage or changing the font of a section
+                of text. <br> <br>
+            </div>
+        </a>
+
+            <a name="Q3">
+            <div>
+                <h3>What’s the Difference Between Coding & Programming ?</h3><br>
+
+                You’ll often hear the terms ‘coding’ and ‘programming’ being used interchangeably, but some differences
+                are worth noting. <br> <br>
+
+                <b>&#149; Coding:</b> A core element of programming that involves translating the logic of a program so
+                that computers
+                can understand and execute it. This covers the writing of the lines of code that make up the program, so
+                it is more concerned with using the syntax of programming languages to communicate with computers. <br>
+                <br>
+
+                <b>&#149; Programming:</b> This encompasses more than just writing code. It usually includes other
+                aspects of software
+                creation, like identifying program requirements, translating requirements into code, debugging, testing,
+                creating documentation, and more. <br> <br>
+
+                <center><img src="Images/Programming_Images/codingVsProgrammmingImage3.webp" class="img-fluid"></center>
+                <br>
+
+                The relationship between coding and programming can be best described by considering what’s involved in
+                writing a novel. <br> <br>
+
+                Coding is akin to writing the sentences and paragraphs that form the novel, while programming involves
+                creating broader elements, like plot, setting, character development, narrative, etc. <br> <br>
+            </div>
+        </a>
+
+            <a name="Q4">
+            <div>
+                <h3> What Are the Benefits of Programming ?</h3><br>
+
+                You may be thinking, okay, this is cool, but why should I bother? Technology is everywhere, and the
+                benefit of computer programming cannot be overemphasized. <br> <br>
+
+                For example, you are reading this article because your device is programmed to display it to you when
+                you implement the correct clicks. Let’s see some reasons why you should care about programming. <br>
+                <br>
+
+                <b>&#149; Work faster:</b> Computers are amazingly fast, and with programming, we can utilize their
+                power to solve
+                complex problems that would take us forever. An example is the power of instant messaging applications.
+                <br> <br>
+
+                <b>&#149; Convenience:</b> Most of the convenient ways of doing things in our modern world are due to
+                programming. For
+                example, due to programming, you can be in the comfort of your home, order some food and have it
+                delivered in minutes. <br> <br>
+
+                <b>&#149; Work 24/7:</b> Computers can work 24/7 without getting exhausted or bored! So you can write
+                programs for
+                computers to handle mundane and repetitive tasks, giving you free time to spend on tasks that require
+                creative thinking. <br> <br>
+
+                <b>&#149; Career opportunities:</b> There are many career prospects when you learn how to program. Most
+                businesses
+                have websites and need programmers to create and maintain those websites. Other prospects include mobile
+                app development, game development, data science, artificial intelligence, and more. <br> <br>
+
+                <b>&#149; Logical & problem-solving skills:</b> At its core, programming is problem-solving. Creating
+                computer
+                programs challenges you to think through problems, consider solutions, and find the most efficient one,
+                helping you improve your analytical skills. So whether you’re using structured programming,
+                object-oriented programming, or another approach, you’ll be solving problems. <br> <br>
+
+                <b>&#149; Have fun building cool stuff:</b> You can create your own games or applications! Imagine
+                creating your own
+                app, putting it on the AppStore or Play Store, and getting thousands of downloads! Sounds exciting,
+                right? It’s possible when you learn to program. <br> <br>
+            </div>
+        </a>
+
+            <a name="Q5">
+            <div>
+                <h3> What Are Programming Languages ?</h3><br>
+
+
+                You may be wondering how programmers (humans) pass instructions to computers. This is done with
+                programming languages. <br> <br>
+
+                Human languages like English and Spanish have a syntax to guide the composition of phrases and
+                sentences. Programming languages also have a syntax that guides how programmers compose the logic behind
+                the code written. <br> <br>
+
+                <b>1. Machine Language</b> <br>
+
+                Ever heard the phrase, ‘computers understand only 1s and 0s’? This is machine language (or machine
+                code). It’s a set of binary digits (1s and 0s) used by a computer’s CPU to execute directly.<br> <br>
+
+                <center><img src="Images/Programming_Images/machineLanguageImage.webp" class="img-fluid"></center>
+                <br>
+
+                A computer has transistors, tiny electric switches with two options, on (for 1s) or off (for 0s). The
+                computer’s CPU can read combinations of these on/off electric signals and create the desired output. In
+                general, machine code is referred to as a low-level language.<br> <br>
+
+                <b>2. Assembly Language (ASM)</b><br>
+
+                These were introduced because machine code can be tedious and prone to error. So, instead of using
+                binary digits, code is written with commands that include symbols and characters. <br> <br>
+
+                <center><img src="Images/Programming_Images/assemblyLanguageImage.webp" class="img-fluid"></center>
+                <br>
+
+                As a computer can only execute 0s and 1s (machine code), programmers must use an assembler to translate
+                assembly language into machine code before execution. <br> <br>
+
+                Still, this isn’t human-friendly, and it requires in-depth knowledge of computer memory and CPU
+                processes to make sense of it. Like machine code, assembly language can also be referred to as a
+                low-level language.<br> <br>
+
+                <b>3. Mid-Level Language</b><br>
+
+
+                When you move away from low-level languages, you tend to encounter the higher-level languages that most
+                people think of when they hear the term programming language.<br> <br>
+
+                And while it’s okay to bundle these all together, it can help to divide these modern languages into two
+                sub-categories, starting with mid-level languages.<br> <br>
+
+                These allow you to write in more human-friendly syntax while retaining access to a computer system's
+                abstraction layer. You can still control the underlying hardware directly, making mid-level languages a
+                bridge between lower and higher-level languages.<br> <br>
+
+                <b>4. High-Level Language</b><br>
+
+                Much like mid-level languages, when you hear the term programming language, these are often what’s being
+                referred to. Most computer programmers use them for their day-to-day activities and work.<br> <br>
+
+                <center><img src="Images/Programming_Images/highLevelLanguageImage.avif" class="img-fluid"></center>
+                <br>
+
+                High-level languages use special translators called compilers to translate into machine code, allowing
+                computers to execute the code logic.<br> <br>
+
+                These languages have a human-friendly syntax and include general purpose programming languages like
+                Python, JavaScript, and PHP. You can also count domain-specific languages like SQL and HTML as
+                high-level.<br> <br>
+            </div>
+        </a>
+
+
+            <a name="Q6">
+            <div>
+                <h3> How to Learn Programming</h3><br>
+
+
+                If you’re interested in learning programming, here’s some advice and steps you can take to ensure a
+                smooth learning journey.<br> <br>
+
+                <b>&#149; Figure out your reasons: </b> Decide why you want to learn to program. You may want to switch
+                careers to game
+                development or software development, build a passion project, or learn as a hobby. Your reason for
+                learning will help you choose the best way to set about this exciting journey.<br> <br>
+
+                <b>&#149; Choose a programming language:</b> Many beginners make the mistake of learning multiple
+                languages at once,
+                but it’s better to pick one to start and learn another later.<br> <br>
+
+                <b>&#149; Choose a learning resource:</b> Learning options include taking an online course, reading a
+                book, joining a
+                boot camp, or a combination of any of these. Identify your preferred style of learning and choose the
+                best option for you.<br> <br>
+
+                <b>&#149; Build projects:</b> As soon as possible, start building projects! This will help cement the
+                concepts you’ll
+                learn through an online course, book, or tutorial. Build stuff, break it along the way, and figure out
+                how to fix things. It’s fun!<br> <br>
+
+                <b>&#149; Join a community:</b> Learning how to code can be hard. But when you join a community of
+                like-minded
+                learners, it can be less intimidating. Make the most of help from programmers with more experience than
+                you.
+            </div>
+        </div>
+    </div>
+</a>
+
+    <a name="Q7">
+        <div id="Books">
+            <p class="display-6">The Best Programming Books You Need To Read
+            </p>
+            <h3>1. Clean Code: A Handbook of Agile Software Craftsmanship</h3> <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 bookImage p-3">
+                        <img src="Images/Programming_Images/book1.jpeg" alt="" class="img-fluid"> <br> <br>
+                        <center><a href="https://www.amazon.in/dp/0132350882?geniuslink=true" class="text-center"><input
+                                    type="button" value="Check price"></a>
+                        </center>
+                    </div>
+                    <div class="col-8 bookInfo p-3">
+                        <div>
+                            <b>Author(s)</b>- Robert C. Martin v <br>
+
+                            <b>Pages</b>- 464 <br>
+
+                            <b>Latest Edition</b>- First Edition <br>
+
+                            <b>Publisher</b>- Prentice Hall <br>
+
+                            <b>Format</b>- Kindle/Paperback <br> <br>
+                        </div>
+                        <div>
+                            <b>Features</b> <br>
+
+                            &#149; Extensive exploration of clean coding principles and agile practices <br>
+                            &#149; Insightful case studies to apply these principles practically <br>
+                            &#149; Guidance on identifying and improving code quality <br>
+                            &#149; Techniques for writing readable, maintainable, and efficient code <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div> <br> <br>
+
+            <h3>2. Introduction to Algorithms</h3> <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 bookImage p-3">
+                        <img src="Images/Programming_Images/book2.jpeg" alt="" class="img-fluid"> <br> <br>
+                        <center><a
+                                href="https://www.amazon.in/s?k=Thomas+H+Cormen+%7C+Charles+E+Leiserson+%7C+Ronald+L+Rivest+%7C+Clifford+Stein+introduction+to+algorithms+3rd+edition&geniuslink=true"
+                                class="text-center"><input type="button" value="Check price"></a>
+                        </center>
+                    </div>
+                    <div class="col-8 bookInfo p-3">
+                        <div>
+                            <b>Author(s)</b>- Thomas H. Cormen, <br>
+
+                            <b>Pages</b>- 1292 <br>
+
+                            <b>Latest Edition</b>- Third Edition <br>
+
+                            <b>Publisher</b>- The MIT Press<br>
+
+                            <b>Format</b>- Hardcover/Paperback <br> <br>
+                        </div>
+                        <div>
+                            <b>Features</b> <br>
+
+                            &#149; In-depth coverage of a broad range of algorithms<br>
+                            &#149; Blend of theoretical and practical aspects <br>
+                            &#149; Accessible to readers at different levels of expertise<br>
+                            &#149; Continuously updated content in new editions <br>
+                            &#149; Ideal for both academic study and professional reference <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div> <br> <br>
+
+            <h3>3. The Clean Coder: A Code of Conduct for Professional Programmers </h3> <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 bookImage p-3">
+                        <img src="Images/Programming_Images/book3.jpeg" alt="" class="img-fluid"> <br> <br>
+                        <center><a href="https://www.amazon.in/dp/0137081073?geniuslink=true" class="text-center"><input
+                                    type="button" value="Check price"></a>
+                        </center>
+                    </div>
+                    <div class="col-8 bookInfo p-3">
+                        <div>
+                            <b>Author(s)</b>- Robert C. Martin <br>
+
+                            <b>Pages</b>- 256<br>
+
+                            <b>Latest Edition</b>- First Edition <br>
+
+                            <b>Publisher</b>- Prentice Hall<br>
+
+                            <b>Format</b>- Kindle/Paperback <br> <br>
+                        </div>
+                        <div>
+                            <b>Features</b> <br>
+
+                            &#149; Emphasizes the importance of professionalism in software development<br>
+                            &#149;Provides practical advice on various aspects of programming, from coding to
+                            communication <br>
+                            &#149; Addresses challenges like conflict resolution, time management, and handling pressure
+                            <br>
+                            &#149; Advocates for a responsible, ethical approach to software craftsmanship <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a name="Q8">
+    <div id="FrequentlyAskedQuestion">
+        <p class="h3">Frequently Asked Questions </p>
+        <div>
+            <hr>
+            <details>
+                <summary>1. What Is the Main Purpose of Programming ?</summary> <br>
+                It is to maximize the power of computers. Programming allows us to solve problems with computers
+                quickly, cheaply, and efficiently. <br>
+            </details>
+        </div>
+        <div>
+            <hr>
+            <details>
+                <summary>2. What Software Is Used for Programming ?</summary> <br>
+
+                Programming requires us to use various software pieces, some of the most essential being an IDE
+                (Integrated Development Environment) or code editors like Visual Studio Code or Atom and a version
+                control system like Git.
+                <br>
+            </details>
+        </div>
+        <div>
+            <hr>
+            <details>
+                <summary>3. What Is the Difference Between Coding and Programming ?</summary> <br>
+
+                Coding is when we use the syntax of a programming language to write computer programs. Programming
+                entails additional processes like identifying program requirements, debugging, testing, etc. <br>
+            </details>
+        </div>
+        
+    </div>
+</a>
+
+ <!-- Linking js file -->
+
+ <script src="script.js"></script>
+
+ <!-- Linking bootstrap JS file -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+     crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+     crossorigin="anonymous"></script>
+
+</body>
+
+</html>
