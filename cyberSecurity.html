@@ -28,7 +28,6 @@
         }
 
         #verticle_line {
-            margin-left: 50px;
             margin-top: 30px;
             width: 2px;
             height: 350px;
@@ -41,11 +40,12 @@
 
         #links {
             width: 370px;
-            padding-left: 20px;
+            padding: 20px;
             padding-top: 10px;
         }
 
         #links a {
+
             font-size: 20px;
             color: rgb(83, 80, 80);
             text-decoration: none;
@@ -65,7 +65,7 @@
         .flex-container {
             display: flex;
             flex-direction: row;
-            justify-content: start;
+            justify-content: space-around;
         }
 
         #information {
@@ -81,7 +81,6 @@
         #verticle_line,
         #links {
             height: 500px;
-            box-shadow: 8px 8px 8px rgb(205, 205, 224);
         }
 
         span {
@@ -102,6 +101,23 @@
             background-color: aliceblue;
             border-radius: 10px;
         }
+        .firstHalf {
+          padding: 30px;
+          height: 550px;
+          padding-top: 0px;
+          margin-top: 0px;
+          border-radius: 10px;
+            box-shadow: 4px 4px 4px rgb(231, 227, 227);
+            position: sticky;
+            top: 10px;
+        } 
+        .secondHalf{
+          padding: 0px;
+          padding-top: 0px;
+          margin-right: 20px;
+          border-radius: 10px;
+            box-shadow: 8px 8px 8px 8px rgb(231, 227, 227);
+        }
     </style>
 </head>
 
@@ -115,6 +131,9 @@
 
     <!-- Second SubPage -->
 
+    <div class="container-fluid  justify-content-center">
+        <div class="row">
+          <div class="col-3 me-5 pe-0 firstHalf">
     <div class="flex-container">
         <div id="verticle_line">
 
@@ -129,7 +148,9 @@
             <hr style="border: 1px solid black;">
             <span><a href="#Q7">Frequently asked questions (FAQ)</a></span>
         </div>
-        <div id="information">
+        </div>
+        </div>
+        <div id="information" class="col-8 secondHalf">
 
             <a name="Q1">
             <div>
@@ -461,7 +482,7 @@
             2023). <br>
 
         </div>
-    </a></div></div>
+    </a></div></div></div>
 
         <a name="Q7">
         <div id="FrequentlyAskedQuestion">

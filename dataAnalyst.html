@@ -28,7 +28,6 @@
         }
 
         #verticle_line {
-            margin-left: 50px;
             margin-top: 30px;
             width: 2px;
             height: 350px;
@@ -64,7 +63,7 @@
         .flex-container {
             display: flex;
             flex-direction: row;
-            justify-content: start;
+            justify-content: space-between;
         }
 
         #information {
@@ -79,8 +78,7 @@
 
         #verticle_line,
         #links {
-            height: 500px;
-            box-shadow: 8px 8px 8px rgb(205, 205, 224);
+            height: 400px;
         }
 
         span {
@@ -95,6 +93,24 @@
         hr {
             border: 1px solid black;
         }
+        .firstHalf {
+          padding: 30px;
+          height: 450px;
+          padding-top: 0px;
+          margin-top: 0px;
+          border-radius: 10px;
+            box-shadow: 4px 4px 4px rgb(231, 227, 227);
+            position: sticky;
+            top: 10px;
+        } 
+        .secondHalf{
+          padding: 0px;
+          padding-top: 0px;
+          margin-right: 20px;
+          border-radius: 10px;
+            box-shadow: 8px 8px 8px 8px rgb(231, 227, 227);
+        }
+
     </style>
 </head>
 
@@ -108,6 +124,9 @@
 
     <!-- Second SubPage -->
 
+    <div class="container-fluid  justify-content-center">
+        <div class="row">
+          <div class="col-3 me-5 pe-0 firstHalf">
     <div class="flex-container">
         <div id="verticle_line">
 
@@ -122,7 +141,9 @@
             <hr style="border: 1px solid black;">
             <span><a href="#Q7">Frequently asked questions (FAQ)</a></span>
         </div>
-        <div id="information">
+        </div>
+        </div>
+        <div id="information" class="col-8 secondHalf">
 
             <a name="Q1">
             <div>
@@ -392,13 +413,14 @@
                 consider attending local meetups. <br> <br>
                 5. <b> Refine your portfolio and prepare for the job market:</b> Work with your mentor and your careers coach to
                 get your professional portfolio ready, optimize your online presence, and start practicing for
-                interviews. <br> <br>
+                interviews. 
             </a>
                 </p>
             </div>
 
         </div>
     </div>
+    </div></div>
 </a>
     <a name="Q7">
     <div id="FrequentlyAskedQuestion">
