@@ -194,3 +194,26 @@ crosIcon.onclick=function(){
 }
 
 
+// Js code to scroll up arrow icon
+
+const arrowButton = document.querySelector(".upArrowButton");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY < 800 ) {
+        arrowButton.classList.remove("active");
+      } 
+      else if ((window.scrollY > 800) && (window.scrollY < 2200)) {
+    arrowButton.style.background="rgb(166, 165, 165)";
+    arrowButton.classList.add("active");
+  } 
+   else if ((window.scrollY > 2200) && (window.scrollY < 2600)) {
+
+    arrowButton.style.background="white";
+    arrowButton.classList.add("active");
+  }
+  else {
+    arrowButton.classList.remove("active");
+  }
+})
+
+

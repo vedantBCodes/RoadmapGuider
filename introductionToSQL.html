@@ -20,6 +20,9 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
 
+     <!-- Linking icon file -->
+  <script src="https://kit.fontawesome.com/741592ca6e.js" crossorigin="anonymous"></script>
+
     <style>
         #firstSubPage {
             width: 100vw;
@@ -102,6 +105,35 @@
           border-radius: 10px;
             box-shadow: 4px 4px 4px 4px rgb(231, 227, 227);
         }
+
+
+/* Css code for up scroll icon */
+
+
+.upArrowButton {
+    background: rgb(166, 165, 165);
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  
+  .upArrowButton.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
 
     </style>
 </head>
@@ -427,9 +459,31 @@
 </div>
 </div>
 
+  <!-- UpArrow button -->
+
+
+  <a href="#" class="upArrowButton">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 
 
     <!-- Linking js file -->
+
+    <script>
+
+        // Js code to scroll up arrow icon
+        
+          const arrowButton = document.querySelector(".upArrowButton");
+      
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          arrowButton.classList.add("active");
+        } else {
+          arrowButton.classList.remove("active");
+        }
+      })
+         </script>
+         
 
     <script src="script.js"></script>
 
