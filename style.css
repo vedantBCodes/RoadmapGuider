@@ -305,3 +305,54 @@ color: #d2cccc;
     pointer-events: auto;
     opacity:1;
   }
+
+
+  /* Style for analog clock */
+
+
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    /*to make the height and width responsive*/
+    width: 10vw;
+    background: url(Images/clockImage3.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 110px;
+    right: 10px;
+}
+ 
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+ 
+#hour {
+    width: 2%;
+    height: 7.5%;
+    top: 4.9%;
+    left: 48.85%;
+    bottom: 50%;
+    opacity: 0.9;
+}
+ 
+#minute {
+    width: 1.6%;
+    height: 8%;
+    top: 4.6%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+ 
+#second {
+    width: 1%;
+    height: 9%;
+    top: 3.5%;
+    left: 49.25%;
+    opacity: 0.8;
+}

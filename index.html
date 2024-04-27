@@ -29,6 +29,7 @@
 
 <body>
   <!-- Navbar start -->
+
   <nav>
     <div class="d-flex flex-row justify-content-between mx-3 mt-2">
       <div class="h2 domainName"> <img src="Images/RgLogo5.jpg" alt="" width="50px"
@@ -45,6 +46,7 @@
       </div>
     </div>
   </nav>
+
   <!-- Navbar ends -->
 
   <hr />
@@ -60,8 +62,13 @@
     </div>
   </header>
 
+  <!-- Code for analog clock -->
+  <div id="clockContainer">
+    <div id="hour"></div>
+    <div id="minute"></div>
+    <div id="second"></div>
+</div>
   
-
 
   <!-- Skills must be explored -->
   <div class="skillsPage py-5">
@@ -127,7 +134,7 @@
         <div class="col-2 ms-3">
           <div class="card ">
             <a href="videoEditing.html" class="atag">
-              <img src="Images/videoEditingImage.webp" class="card-img-top img-fluid" alt="..." />
+              <img src="Images/videoEditingImage2.webp" class="card-img-top img-fluid" alt="..." style="height:140px" />
               <div class="card-body">
                 <h5 class="card-title">Video Editing</h5>
                 <p class="card-text">
@@ -467,13 +474,25 @@
   </a>
 
 
-
-
-
- 
-
-
   <!-- Linking js file -->
+  <script>
+
+    // Script for an analog clock
+    
+    setInterval(() => {
+    d = new Date(); //object of date()
+    hr = d.getHours();
+    min = d.getMinutes();
+    sec = d.getSeconds();
+    hr_rotation = 30 * hr + min / 2; //converting current time
+    min_rotation = 6 * min;
+    sec_rotation = 6 * sec;
+ 
+    hour.style.transform = `rotate(${hr_rotation}deg)`;
+    minute.style.transform = `rotate(${min_rotation}deg)`;
+    second.style.transform = `rotate(${sec_rotation}deg)`;
+}, 1000);
+  </script>
 
   <script src="script.js"></script>
 

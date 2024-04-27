@@ -45,7 +45,7 @@ section3.onclick=function(){
     section2.style.borderTop="2px solid black"
 }
 
-// Autocomplete search box code
+// Autocomplete search box code (Code referred from somewhere)
 
 // Start
 
@@ -180,8 +180,6 @@ var signInContainer1=document.querySelector(".SignInContainer");
 
 signInButton1.onclick=function(){
 
-    // sectionBlock1.style.display="none";
-    // signInContainer1.style.backgroundColor="black";
     signInContainer1.style.display="block";
 
 }
