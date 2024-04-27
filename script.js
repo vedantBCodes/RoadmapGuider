@@ -1,4 +1,3 @@
-
 // JS code for home page
 
 var section1=document.getElementById("section1");
@@ -13,16 +12,37 @@ section1.onclick=function(){
     sectionBlock1.style.display="block";
     sectionBlock2.style.display="none";
     sectionBlock3.style.display="none";
+
+    section1.style.borderBottom="2px solid black"
+    section1.style.borderTop="2px solid white"
+    section2.style.borderBottom="2px solid white"
+    section2.style.borderTop="2px solid black"
+    section3.style.borderBottom="2px solid white"
+    section3.style.borderTop="2px solid black"
 }
 section2.onclick=function(){
     sectionBlock2.style.display="block";
     sectionBlock1.style.display="none";
     sectionBlock3.style.display="none";
+
+    section2.style.borderBottom="2px solid black"
+    section2.style.borderTop="2px solid white"
+    section1.style.borderBottom="2px solid white"
+    section1.style.borderTop="2px solid black"
+    section3.style.borderBottom="2px solid white"
+    section3.style.borderTop="2px solid black"
 }
 section3.onclick=function(){
     sectionBlock3.style.display="block";
     sectionBlock1.style.display="none";
     sectionBlock2.style.display="none";
+
+    section3.style.borderBottom="2px solid black"
+    section3.style.borderTop="2px solid white"
+    section1.style.borderBottom="2px solid white"
+    section1.style.borderTop="2px solid black"
+    section2.style.borderBottom="2px solid white"
+    section2.style.borderTop="2px solid black"
 }
 
 // Autocomplete search box code
