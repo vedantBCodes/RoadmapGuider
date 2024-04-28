@@ -17,7 +17,21 @@ $message=$_POST['Message'];
 $conn = mysqli_connect($server,$username,$password,$db_name);
 
 
+<<<<<<< HEAD
 
+=======
+$sql = "INSERT INTO `contact_us`(`Name`, `Email`, `Message`) VALUES ('$name','$email','$message')";
+
+$result = mysqli_query($conn , $sql);
+
+if($result==true)
+{
+    echo "Data submitted sucessfully";
+}
+else{
+    echo "Query failed";
+}
+>>>>>>> 05075597b0175c01239eafa684d198bbbd25328d
 
 if($conn==true)
 {
@@ -27,6 +41,7 @@ if($conn==true)
 else
 {
     echo "Not connected (error)";
+<<<<<<< HEAD
 }
 
 $sql = "INSERT INTO `contact_us`(`Name`, `Email`, `Message`) VALUES ('$name','$email','$message')";
@@ -40,5 +55,10 @@ if($result==true)
 else{
     echo "Query failed";
 }
+=======
+}
+
+
+>>>>>>> 05075597b0175c01239eafa684d198bbbd25328d
 
 ?>
