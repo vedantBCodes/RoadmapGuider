@@ -191,6 +191,32 @@ crosIcon.onclick=function(){
     signInContainer1.style.display="none";
 }
 
+// Code to popup a Contact us Page
+
+
+
+var contactButton=document.getElementById("contactButton");
+var contactUsContainer=document.querySelector("#contact_us");
+var firstSubpage=document.getElementById("firstSubpage");
+
+
+contactButton.onclick=function(){
+
+    contactUsContainer.style.display="block";
+    firstSubpage.style.opacity=0.2;
+    firstSubpage.style.transition="1s";
+
+
+}
+
+var contactCrosIcon=document.getElementById("ContactCrosIcon");
+
+contactCrosIcon.onclick=function(){
+
+    contactUsContainer.style.display="none";
+    firstSubpage.style.opacity=1;
+}
+
 
 // Js code to scroll up arrow icon
 

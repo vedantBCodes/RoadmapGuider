@@ -43,12 +43,10 @@
 .typeahead { 
     width: 150%; 
     border: 2px solid white;
-    /* border: none; */
     padding: 10px 10px;
     border-radius: 20px;
-    /* top: 60px !important; */
-    /* left: 650px !important;  */
     right: 300px ! important;
+    margin-right: 50px;
     background-color: rgb(210, 213, 216);
 }
 .typeahead:hover{
@@ -356,3 +354,79 @@ color: #d2cccc;
     left: 49.25%;
     opacity: 0.8;
 }
+
+/* Style for contact us page */
+/* Start */
+
+#contact_us{
+    display: none;
+    margin: 20px;
+    /* position: relative;
+    left: 30%; */
+    position: absolute;
+    top: 85px;
+    left: 500px;
+    width: 450px;
+    padding: 50px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    /* background-color: rgb(103, 55, 55); */
+    box-shadow: 4px 4px 4px 4px rgb(190, 190, 190);
+
+}
+#contact_us input{
+    border: 2px solid white;
+    background-color: white;
+}
+#contact_us input:hover{
+    border: 2px solid white;
+    color: black;
+}
+.contactInput , textarea{
+    padding: 5px 0px;
+    
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
+    text-align: center;
+}
+.contactInput:hover{
+    box-shadow: 5px 5px 5px 5px rgb(190, 190, 190);
+   transition: 1s;
+}
+.contactInput{
+    width: 250px;
+    text-align: center;
+}
+#contact_us > label{
+    font-size: 40px;
+}
+textarea{
+    border-radius: 10px;
+}
+#contactSubmit{
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    left: 100px;
+    color: blue;
+    border: 2px solid blue;
+  
+}
+
+#contactSubmit:hover{
+color: white;
+background-color: blue;
+transition: 1s;
+}
+#ContactCrosIcon{
+    width: 30px;
+    position: relative;
+    left: 350px;
+    bottom: 30px;
+}
+#message{
+   font-size: 20px;
+}
+/* End */
