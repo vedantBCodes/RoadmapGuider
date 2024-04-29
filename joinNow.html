@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Now</title>
+
+    <!-- Linking icon file -->
+  <script src="https://kit.fontawesome.com/741592ca6e.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    body{
+        background-image: url(Images/joinNowBgImage.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #mainContainer {
+        width: 30vw;
+        /* height: 60vh; */
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        background-color: rgb(237, 240, 241);
+        box-shadow: 4px 4px 4px 4px rgb(208, 207, 207);
+        border-radius: 20px;
+    }
+
+    .heading {
+        font-size: 30px;
+        text-shadow: 1px 1px;
+    }
+
+    .step_name {
+        font-size: 30px;
+        position: relative;
+        bottom: 20px;
+    }
+
+    input,
+    textarea {
+        padding: 15px 30px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 4px 4px 4px rgb(202, 201, 201);
+    }
+
+    input:hover {
+        
+        transition: 1s;
+        box-shadow: 6px 6px 6px rgb(202, 201, 201);
+    }
+
+    .next {
+        border: 2px solid white;
+        color: blue;
+        padding: 15px 40px;
+        font-size: 20px;
+        /* background-color: rgb(110, 198, 110); */
+    }
+
+    .next:hover {
+        color: white;
+        background-color: rgb(81, 81, 193);
+    }
+
+    .step2 {
+        font-size: 25px;
+        align-items: flex-start;
+    }
+
+    input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    input::placeholder {
+        font-size: 15px;
+        color: black;
+    }
+    textarea::placeholder {
+        font-size: 15px;
+        color: black;
+    }
+
+    .step2,
+    .step3 {
+        display: none;
+    }
+
+    .step {
+        height: 60vh;
+    }
+    .step3 {
+        height: 65vh;
+    }
+    #backBtn{
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        left: 20px;
+        top: 30px;
+    }
+    .inputBox{
+        width: 230px;
+        border-radius: 10px;
+        padding-left: 10px;
+        box-shadow: 6px 6px 6px 6px rgb(202, 201, 201);
+    }
+    .stepx{
+        position: relative;
+        bottom: 30px;
+    }
+</style>
+
+<body>
+    <div>
+        <a href="index.html"><img src="Images/back-buttonImage.png" alt="" id="backBtn"></a>
+    </div>
+    <div>
+        <div id="mainContainer">
+            <form action="joinNow.php" method="post">
+
+                
+                   <center>
+                    <div class="step step1">
+                        <p class="heading">CREATE YOUR ACCOUNT</p>
+                        <p class="step_name">This is step 1</p>
+                        <div class="inputBox"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;<input type="email" placeholder="Email" name="email"></div> <br> <br>
+                        <div class="inputBox"><i class="fa-solid fa-key"></i>&nbsp;&nbsp;<input type="password" placeholder="Password" name="password1"></div> <br> <br> 
+                        <div class="inputBox"><i class="fa-solid fa-key"></i>&nbsp;&nbsp;<input type="password" placeholder="Confirm password" name="password2"></div> <br> <br> <br>
+
+                         <input type="button" name="Next" class="next" value="Next" id="nextBtn1">
+                    </div>
+                </center>
+
+                <div class="step step2">
+                    <center>
+                        <p class="heading">CHOOSE YOUR INTEREST</p>
+                        <p class="step_name">We will notify you according to your interest</p>
+                    </center>
+
+                    <input type="radio" for="DM" name="skill" value="digitalMarketing">
+                    <label for="DM" >Digital Marketing</label> <br>
+
+                    <input type="radio" for="VE" name="skill" value="videoEditing">
+                    <label for="VE" >Video Editing</label><br>
+
+                    <input type="radio" for="GD" name="skill" value="graphicDesigning">
+                    <label for="GD"  >Graphic Designing</label><br>
+
+                    <input type="radio" for="CC" name="skill" value="cloudComputing">
+                    <label for="CC"  >Cloud Computing</label><br> <br>
+
+                    <center><input type="button" name="previous" class="next" value="Previous" id="previousBtn1">
+                        <input type="button" name="Next" class="next" value="Next" id="nextBtn2">
+                    </center>
+                </div>
+
+                <center>
+                    <div class="step step3">
+                        <p class="heading">PESONAL DETAILS</p>
+                        <p class="step_name">We will never sell it</p>
+                        <div class="inputBox"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;<input type="text" placeholder="First Name" name="firstName"></div> <br> 
+                        <div class="inputBox"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;<input type="text" placeholder="Last Name" name="lastName"> </div><br>
+                        <div class="inputBox"><i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;<input type="number" placeholder="Phone" name="phoneNumber"></div> <br> <br>
+                        <center><textarea name="address" id="" cols="30" rows="5" placeholder="Address"></textarea></center>
+                        <br>
+
+                        <input type="button" name="previous" class="next" value="Previous" id="previousBtn2">
+                        <input type="submit" name="Next" class="next" value="Submit">
+                    </div>
+                </center>   
+                <!-- <center>
+                    <div class="step stepx">
+                        <p class="heading">CREATE YOUR ACCOUNT</p>
+                        <p class="step_name">This is step 1</p>
+                        <div class="inputBox"><i class="fa-solid fa-user"></i><input type="email" name="email" placeholder="Enter email"></div> <br> <br>
+                        <div class="inputBox"><i class="fa-solid fa-key"></i><input type="password" name="password" placeholder="Enter a password"></div> <br>
+                
+                <div class="inputBox"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;<input type="text" placeholder="First Name" name="firstName"></div> <br> 
+                        <div class="inputBox"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;<input type="text" placeholder="Last Name" name="lastName"> </div><br>
+                        <div class="inputBox"><i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;<input type="number" placeholder="Phone" name="phoneNumber"></div> <br> <br> 
+                        <input type="submit">
+
+                </div></center> -->
+
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+
+        var nextBtn1 = document.getElementById("nextBtn1");
+        var nextBtn2 = document.getElementById("nextBtn2");
+        var previousBtn1 = document.getElementById("previousBtn1");
+        var previousBtn2 = document.getElementById("previousBtn2");
+
+        var section1 = document.querySelector(".step1");
+        var section2 = document.querySelector(".step2");
+        var section3 = document.querySelector(".step3");
+
+        nextBtn1.onclick = function () {
+
+            section1.style.display = "none";
+            section2.style.display = "block";
+
+        }
+
+        previousBtn1.onclick = function () {
+
+            section1.style.display = "block";
+            section2.style.display = "none";
+
+        }
+
+        nextBtn2.onclick = function () {
+
+            section2.style.display = "none";
+            section3.style.display = "block";
+
+        }
+
+        previousBtn2.onclick = function () {
+
+            section2.style.display = "block";
+            section3.style.display = "none";
+
+        }
+
+    </script>
+</body>
+
+</html>

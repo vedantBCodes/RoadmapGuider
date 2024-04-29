@@ -153,23 +153,26 @@ if(e.key=='Enter')
 
 //Start
 
-// let signupBtn = document.getElementById("signupBtn");
-// let signinBtn = document.getElementById("signinBtn");
-// let namefield = document.getElementById("namefield");
-// let title = document.getElementById("title");
+let signinBtn = document.getElementById("signinBtn");
+let signinContainer1 = document.querySelector(".SignInContainer1");
+let signinContainer2 = document.querySelector(".SignInContainer2");
+var signInContainer=document.querySelector(".SignInContainer");
 
-// signinBtn.onclick =function(){
-//     namefield.style.maxHeight = "0";
-//     title.innerHTML="sign in";
-//     signupBtn.classList.add("disable");
-//     signinBtn.classList.remove("disable")
-// }
-// signupBtn.onclick =function(){
-//     namefield.style.maxHeight = "35px";
-//     title.innerHTML="sign Up";
-//     signupBtn.classList.remove("disable");
-//     signinBtn.classList.add("disable")
-// }
+function myFunction(){
+
+    signinContainer1.style.display="none";
+    signinContainer2.style.display="block";
+}
+
+function myFunction2(){
+
+   signInContainer.style.display="none";
+}
+function myFunction3(){
+
+    signinContainer1.style.display="block";
+    signinContainer2.style.display="none";
+}
 
 //End
 
