@@ -243,4 +243,17 @@ window.addEventListener("scroll", () => {
   }
 })
 
+// Script code for profile section
+
+var profileImg=document.querySelector(".profileImg");
+var profileSection=document.querySelector("#profile");
+var crossInProfileImg=document.querySelector(".crossInProfileImg");
+
+profileImg.onclick=function(){
+   profileSection.style.display="block";
+}
+
+crossInProfileImg.onclick=function(){
+    profileSection.style.display="none";
+}
 
