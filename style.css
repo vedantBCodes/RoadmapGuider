@@ -94,8 +94,8 @@ header {
 }
 input {
   border-radius: 10px;
-  background-color: rgb(206, 206, 211);
-  color: white;
+  background-color: rgb(229, 229, 231);
+  color: black;
   padding: 2px 12px;
   border: 2px solid blue;
 }
@@ -105,7 +105,9 @@ input::placeholder {
 input:hover {
   color: rgb(21, 21, 226);
   background-color: white;
+  border: 2px solid black;
   transition: 0.9s;
+
 }
 
 .communityText {
@@ -116,10 +118,22 @@ input:hover {
 #aboutAndSignIn {
   font-size: 20px;
 }
+#aboutAndSignIn a{
+  color: blue;
+  position: relative;
+  left: 100px;
+  top: 5px;
+}
 #aboutAndSignIn a:hover {
   color: black;
   text-decoration: none;
   transition: 1s;
+}
+
+#aboutAndSignIn input{
+  position: relative;
+  right: 10px;
+  top: 2px;
 }
 .profileImg{
   margin-left: 20px;
@@ -218,6 +232,7 @@ input:hover {
 
 .SignInContainer {
   display: none;
+ 
 }
 #crosIcon,
 #crosIcon2 {
@@ -487,6 +502,14 @@ textarea {
 }
 #searchBox{
     display: none;
+}
+.subscribeBox{
+  color: black;
+  background-color: rgb(236, 235, 235);
+}
+.SignInContainer{
+  position: absolute;
+  top: 420px;
 }
 /* End */
 
