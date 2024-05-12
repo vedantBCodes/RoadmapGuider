@@ -1,0 +1,44 @@
+
+.header{
+    height: 65px;
+    color: black;
+    background-color: white;
+}
+.atag{
+    font-size: 30px;
+    color: blue;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+}
+.atag:hover{
+    text-decoration: none;
+}
+.footer1{
+    
+    background-color: black; 
+    font-size: 20px;
+    height: 45px;
+}
+.footerText{
+    position: relative;
+    left: 100px;
+    color:white; 
+    font-size:20px;
+}
+input[type="submit"]{
+    width: 150px;
+    color: blue;
+    padding:10px; 
+    border-radius:10px; 
+    position: relative;
+    left: 150px;
+    font-size: 20px;
+
+}
+input[type="submit"]:hover{
+    color: white;
+    background-color: rgb(50, 50, 156);
+    transition: 1s;
+}
+
